@@ -1,0 +1,25 @@
+{
+  "scheme": "dense2sparse",
+  "run_mode": "full",
+  "seed": 42,
+  "total_timesteps": 500000,
+  "max_episode_steps": 50,
+  "terminate_on_success": false,
+  "n_envs": 4,
+  "batch_size": 512,
+  "train_freq": 4,
+  "buffer_size": 1000000,
+  "learning_starts": 5000,
+  "learning_rate": 0.0003,
+  "gamma": 0.95,
+  "tau": 0.005,
+  "net_arch": [
+    256,
+    256
+  ],
+  "n_sampled_goal": 4,
+  "goal_selection_strategy": "future",
+  "dense_fraction": 0.4,
+  "switch_step": 200000,
+  "device": "cuda"
+}
